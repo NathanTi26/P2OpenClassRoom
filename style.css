@@ -30,17 +30,18 @@ body {
 .nav-header {
 
         max-width: 1340px;
+        min-width: 1340px;
         grid-area: header;
         display: grid;
         grid-template-columns: 1fr 3fr;
         grid-template-areas:
                 "header  nav";
-        margin-top: -16px;
+        margin-top: -24px;
         padding-bottom: 20px;
         position: relative;
         max-width: 1340px;
-        margin: auto;
-
+        margin-left: auto;
+        margin-right: auto;
 }
 
 header {
@@ -747,7 +748,7 @@ header h3 {
         box-shadow: 0px 5px 5px rgba(0, 0, 255, .05);
         position: relative;
         margin-bottom: 20px;
-        margin-left: min(20px);
+        margin-left: 30px;
 
         max-height: 445px;
         max-width: 301px;
@@ -886,8 +887,10 @@ h6 {
 
 footer {
 
+
         max-width: 1340px;
         margin: auto;
+        width: 100%;
 
 }
 
@@ -897,8 +900,8 @@ footer {
         position: absolute;
         margin-top: 60px;
         background-color: #F2F2F2;
-        width: 100%;
-        max-width: 1340px;
+
+        min-width: 1340px;
         justify-content: space-between;
         display: flex;
         padding-bottom: 50px;
@@ -954,7 +957,7 @@ footer {
         body {
 
                 margin: auto;
-
+                min-width: 0px;
 
         }
 
@@ -985,6 +988,8 @@ footer {
                 margin-left: -10px;
                 height: 50px;
                 margin-top: 75px;
+                max-width: 992px;
+                min-width: 0px;
 
         }
 
@@ -1297,13 +1302,21 @@ footer {
 
         }
 
+        footer {
+
+                width: 100%;
+                max-width: 992px;
+                min-width: 0px;
+
+        }
 
         .footer {
 
 
                 margin: 60px auto 0px auto;
                 width: 100%;
-                max-width: 992px;
+
+                min-width: 0px;
                 flex-wrap: wrap;
 
 
@@ -1336,6 +1349,8 @@ footer {
 
                 max-width: 98%;
                 padding-left: 0px;
+                min-width: 992px;
+
         }
 
         main {
@@ -1350,6 +1365,12 @@ footer {
 
         }
 
+        .nav-header {
+
+                max-width: 992px;
+                min-width: 992px;
+
+        }
 
 
         .container1 {
@@ -1466,7 +1487,8 @@ footer {
 
                 width: 100%;
                 margin: 60px auto 0 auto;
-
+                min-width: 992px;
+                min-width: 992px;
         }
 
 
